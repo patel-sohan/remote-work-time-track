@@ -1,0 +1,35 @@
+.toast-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.toast-wrapper {
+  pointer-events: auto;
+  margin-bottom: 10px;
+  transform: translateY(calc(var(--index) * 10px));
+  transition: transform 0.3s ease;
+}
+
+/* Stack effect for multiple toasts */
+.toast-wrapper:not(:first-child) {
+  margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+  .toast-container {
+    left: 0;
+    right: 0;
+  }
+  
+  .toast-wrapper {
+    margin-bottom: 8px;
+    transform: none;
+  }
+  
+  .toast-wrapper:not(:first-child) {
+    margin-top: 0;
+  }
+}
