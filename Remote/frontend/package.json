@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:analyze": "vite build --mode analyze",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "build:analyze": "vite build --mode analyze",
+  "preview": "vite preview"
+},
+  
   "dependencies": {
     "chart.js": "^4.5.0",
     "react": "^19.1.0",
